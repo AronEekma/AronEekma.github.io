@@ -1,0 +1,122 @@
+<html>  
+  
+<head>  
+    <title>Aron's webserver</title>  
+<style type="text/css">
+	body {
+    width:100%;
+    height:100%;
+    background-image:url("https://images.wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_300x168.jpg");
+    margin:0 auto;
+	background-position: center center;
+	background-size: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+li b {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0;
+    position: relative;
+    z-index: 1;
+    bottom: 200%;
+    left: -45%;
+    margin-left: -50px;
+}
+
+.tooltip .tooltip::after {
+    content: "";
+    position: relative;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+<body>
+<div>
+    <h1 style="color:dodgerblue;text-align:left;font-size:300%;font-family:georgia;padding:10px 10px;">Aron Eekma</h1>
+</div> 
+<ul>
+<li><a href="home.html">Home</a></li>
+  <li><a class="active" href="projecten.html">Projecten</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+<p style="color:white;">
+Vul een nummer in:
+</p>
+<textarea rows="1" cols="10" id="text">
+</textarea>
+<button onclick="function1()">
+Submit
+</button>
+<div>
+<p>
+
+
+</p>
+<input type="text" id="result" size="60">
+</div>
+<ul>
+	<li><b style="font-size:80%;">Copyright © 2019 Aron Eekma | No Rights Reserved</b></li>
+</ul>
+</body>
+<script>
+function function1() {
+	var straal = document.getElementById("text").value;
+	var opp = straal * straal * Math.PI;
+	var opp2 = opp.toFixed(2);
+	console.log(opp);
+	console.log(opp2);
+	document.getElementById("result").value = "Onafgerond: " + opp + "	Afgerond: " + opp2;
+}
+</script>
+</head>
+</html>  
