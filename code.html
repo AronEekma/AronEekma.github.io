@@ -24,6 +24,8 @@
         var invoer = prompt("Code:");
         if(invoer == null) {
             console.log("Geannuleerd!");
+            document.body.style.backgroundColor = "grey";
+            document.getElementById("GoedFout").innerHTML = "";
         } else {
             if(invoer == NaN) {
                 console.log("Is geen nummer!");
