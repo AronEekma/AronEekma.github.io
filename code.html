@@ -22,7 +22,7 @@
     function promp() {
         document.body.style.backgroundColor = "grey";
         var invoer = prompt("Code:");
-        if(invoer == "") {
+        if(invoer == "" || null) {
             console.log("Geannuleerd!");
             document.body.style.backgroundColor = "grey";
             document.getElementById("GoedFout").innerHTML = "";
