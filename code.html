@@ -15,28 +15,27 @@
     <body>
         <div id="GoedFout" style="text-align: center;font-size: 500%;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"></div>
         <div style="padding:20% 45%">
-            <button onclick="background()" style="font-size: 300%;">Start!</button>
+            <button onclick="promp()" style="font-size: 300%;">Start!</button>
         </div>
     </body>
     <script>
-    function background() {
-        document.body.style.backgroundColor = "grey";
-        setTimeout(promp, 2000);
-    }
     function promp() {
-        
+        document.body.style.backgroundColor = "grey";
         var invoer = prompt("Code:");
         if(invoer == null) {
-            return;
+            console.log("Geannuleerd!");
         } else {
             if(invoer == NaN) {
+                console.log("Is geen nummer!");
                 document.body.style.backgroundColor = "red";
                 document.getElementById("GoedFout").innerHTML = "Fout!";
             } else {
-                if(invoer == 0000) {
+                if(invoer == 1111) {
+                    console.log("Goed! Code was: " + invoer)
                     document.body.style.backgroundColor = "green";
                     document.getElementById("GoedFout").innerHTML = "GOED!";
                 } else {
+                    console.log("Fout! Code was: "+ invoer)
                     document.body.style.backgroundColor = "red";
                     document.getElementById("GoedFout").innerHTML = "Fout!";
                 }
