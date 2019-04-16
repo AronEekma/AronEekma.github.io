@@ -17,6 +17,7 @@
         <div style="padding:20% 45%">
             <button onclick="promp()" style="font-size: 300%;">Start!</button>
         </div>
+        <div id="Klaar" style="text-align: center;font-size: 200%;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"></div> 
     </body>
     <script>
     function promp() {
@@ -36,6 +37,7 @@
                     console.log("Goed! Code was: " + invoer)
                     document.body.style.backgroundColor = "green";
                     document.getElementById("GoedFout").innerHTML = "GOED!";
+                    document.getElementById("Klaar").innerHTML = "Hoeraaaaaaa, je bent klaar met de puzzel! Dat was wel leuk toch? Denk ik?";
                 } else {
                     console.log("Fout! Code was: "+ invoer)
                     document.body.style.backgroundColor = "red";
