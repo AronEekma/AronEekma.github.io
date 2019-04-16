@@ -21,9 +21,10 @@
     <script>
     function background() {
         document.body.style.backgroundColor = "grey";
-        promp();
+        setTimeout(propm(), 2000);
     }
     function promp() {
+        
         var invoer = prompt("Code:");
         if(invoer == null) {
             return;
