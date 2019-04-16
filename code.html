@@ -15,12 +15,15 @@
     <body>
         <div id="GoedFout" style="text-align: center;font-size: 500%;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"></div>
         <div style="padding:20% 45%">
-            <button onclick="promp()" style="font-size: 300%;">Start!</button>
+            <button onclick="background()" style="font-size: 300%;">Start!</button>
         </div>
     </body>
     <script>
-    function promp() {
+    function background() {
         document.body.style.backgroundColor = "grey";
+        promp();
+    }
+    function promp() {
         var invoer = prompt("Code:");
         if(invoer == null) {
             return;
