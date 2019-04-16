@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Code invoer</title>
+        <style type="text/css">
+        body {
+    width:100%;
+    height:100%;
+    background-color:grey;
+    margin:0 auto;
+	background-position: center center;
+	background-size: 100%;
+}
+        </style>
+    </head>
+    <body>
+        <div id="GoedFout" style="text-align: center;font-size: 500%;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"></div>
+        <div style="padding:20% 45%">
+            <button onclick="promp()" style="font-size: 300%;">Start!</button>
+        </div>
+    </body>
+    <script>
+    function promp() {
+        var invoer = prompt("Code:");
+        if(invoer == null) {
+            return;
+        } else {
+            if(invoer == NaN) {
+                document.body.style.backgroundColor = "red";
+                document.getElementById("GoedFout").innerHTML = "Fout!";
+            } else {
+                if(invoer == 0000) {
+                    document.body.style.backgroundColor = "green";
+                    document.getElementById("GoedFout").innerHTML = "GOED!";
+                } else {
+                    document.body.style.backgroundColor = "red";
+                    document.getElementById("GoedFout").innerHTML = "Fout!";
+                }
+            }
+        }
+    }
+    </script>
+</html>
