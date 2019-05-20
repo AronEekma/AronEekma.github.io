@@ -1,4 +1,4 @@
-header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found", true, 404);
+header("Status: 404 Not Found");
 header('Access-Control-Allow-Methods: GET, REQUEST, OPTIONS');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Origin: *');
