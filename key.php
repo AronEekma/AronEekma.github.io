@@ -15,7 +15,7 @@ function f($str)
     return trim(preg_replace("(\\\)","",htmlentities(strip_tags($str),ENT_QUOTES,'UTF-8')));
 }
  
-$altnKey=(int)$_GET['altnKey'];
+$altKey=(int)$_GET['altKey'];
 $ctrlKey=(int)$_GET['ctrlKey'];
 $userKey=f($_GET['userKey']);
 $targKey=f($_GET['targKey']);
